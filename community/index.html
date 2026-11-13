@@ -694,7 +694,7 @@ html:not(.env-lock):not(.cue-off) .scroll-cue{opacity:1;visibility:visible;trans
           <input type="file" id="f-photo" accept="image/*" hidden>
         </div>
 
-        <button class="btn" type="submit" id="f-submit">Save my seat</button>
+        <button class="btn" type="submit" id="f-submit">Reserve my seat and get my pass</button>
       </form>
     </div>
 
@@ -919,7 +919,7 @@ html:not(.env-lock):not(.cue-off) .scroll-cue{opacity:1;visibility:visible;trans
     tSeats.textContent=coming==='yes'?seats:'—';
     minus.disabled=seats<=1; plus.disabled=seats>=2;
     seatsField.hidden=coming!=='yes';
-    if(!replied) $('f-submit').textContent=coming==='yes'?'Get my pass':'Continue';
+    if(!replied) $('f-submit').textContent=coming==='yes'?'Reserve my seat and get my pass':'Continue';
   }
   nameEl.addEventListener('input',function(){$('name-err').hidden=true;paint()});
   emailEl.addEventListener('input',function(){$('email-err').hidden=true});
